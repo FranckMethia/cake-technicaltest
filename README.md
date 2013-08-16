@@ -9,3 +9,5 @@ For this test you are expected to write the following functions:
 * Clients->doSet()
 * Clients->doCreate()
 * Clients->doDelete()
+
+Your code should use fake data.
