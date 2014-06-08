@@ -1,6 +1,11 @@
 <?php
 
 require(__DIR__ . '/Router.class.php');
+/**
+ * Permet de définir un dossier racine de l'application
+ *
+ */
+define ('BASEURL', "/cake-technicaltest");
 
 Router::addRoute('GET', '/clients', 'Clients', 'doList');
 Router::addRoute('GET', '/clients/{id}', 'Clients', 'doGet');
