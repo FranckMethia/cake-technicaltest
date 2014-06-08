@@ -41,8 +41,8 @@ class Router
 			}
 		}
 		if(!$find) {
-			$messages['errors'][] = 'Aucune route valide !';
+			header("HTTP/1.1 404 Not Found");
+			header('Content-Type: text/json');
 		}
-		echo json_encode($messages);
 	}
 }
